@@ -32,11 +32,18 @@ public class Car extends Vehicle {
 
     @Override
     public void accelerate() {
+    if (speed < engine.getMax()) {
+        speed += engine.getAccelerationRate();
+        System.out.println("Accelerating at.. " + speed + "mph");
+    } else if (speed > engine.getMax()) {
+        speed = engine.getMax();
+        System.out.println("Going at max.");
+    }
 
     }
 
     @Override
-    public void breaking() {
+    public void braking() {
 
     }
 

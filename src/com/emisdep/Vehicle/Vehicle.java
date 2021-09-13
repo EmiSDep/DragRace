@@ -38,7 +38,7 @@ public abstract class Vehicle {
 
     public abstract void accelerate();
 
-    public abstract void breaking();
+    public abstract void braking();
 
     public abstract void coast();
 
